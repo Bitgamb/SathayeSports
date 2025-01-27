@@ -241,7 +241,7 @@ def main():
     init_db()
     keep_alive()  # Start the web server
 
-    application = Application.builder().token(BOT_TOKEN).build()
+    application = Application.builder().token("7815126680:AAFnZda4Bj_tQk4rFc3Xo1nBqDeJ9dBoF94").build()
 
     application.add_handler(CommandHandler("start", start))
     application.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_response))
